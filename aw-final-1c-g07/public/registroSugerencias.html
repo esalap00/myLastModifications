@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Carlos Prieto Viñuela">
+        <meta name="description" content="Vista de Registro de Sugerencias">
+        <title>Registro de Sugerencias</title>
+        <script type="module" defer src="/assets/js/sugerencia.js"></script>
+        <link rel="stylesheet" href="/assets/css/fondo.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="titulo">Yu-Gi-Oh!</h1>
+        </header>
+
+        <main>
+            <h2>Realice una Sugerencia:</h2>
+        
+            <!--form method="post" onsubmit="enviarDatos(event)"-->
+            <form>
+                <label for="sugerencia">Sugerencia:</label><br>
+                <textarea id="sugerenciaText" rows="4" cols="50" required></textarea><br><br>   
+                <!--input class="input" type="submit" onclick="enviarDatos(event)" value="Enviar Sugerencia"-->
+                <input class="input" type="submit" id="sugerencia" value="Enviar Sugerencia">
+                <!--input class="input" type="button" onclick="cancelar(event)" value="Cancelar Sugerencia"-->
+                <input class="input" type="button" id="cancelar" value="Cancelar Sugerencia">
+            </form>      
+        </main>
+
+        <footer>
+            <p>© 2024. Copyright YuGi Cards!! Propiedad Registrada.</p>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,62 @@
+@use "@picocss/pico/scss/pico";
+
+.content-yugioh{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+} 
+
+.cards{
+  padding: 20px;
+  flex: 3;
+  .card-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap:10px;
+    max-height: 800px; 
+    overflow: auto; 
+    article{
+      background-color: black;
+      padding: 0;
+      button{
+        background-color: transparent;
+        border: none;
+        padding: 0;
+      }
+    }
+  }
+}
+
+aside{
+  padding: 20px;
+  flex: 1;
+  display: none;
+  ul{
+    padding: 0;
+    list-style-type: none;
+
+    li{
+      margin-bottom: 10px;
+
+      .card-selected{
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span{
+          border: 2px solid pink;
+          border-radius: 20px;
+          padding: 2px 12px;
+          background-color: pink;
+        }
+
+        i{
+          color: red;
+        }
+
+      }
+    
+    }
+  }
+}

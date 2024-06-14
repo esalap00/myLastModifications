@@ -1,0 +1,41 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/devcontainers/images/tree/main/src/javascript-node
+{
+  "name": "Aplicaciones Web (Universidad de León)",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
+
+  // Configure tool-specific properties.
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "vincaslt.highlight-matching-tag",
+        "ms-vscode.live-server",
+        "Gruntfuggly.todo-tree",
+        "streetsidesoftware.code-spell-checker-spanish",
+        "streetsidesoftware.code-spell-checker"
+      ]
+    }
+  },
+
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers-contrib/features/mongosh-homebrew:1": {}
+  },
+
+  "portsAttributes": {
+    "3000": {
+      "label": "webapp"
+    }
+  },
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "forwardPorts": [3000],
+
+  // preinstalll all dependencies
+  "onCreateCommand": "npm install"
+}

@@ -1,0 +1,10 @@
+.Boton-Cierre {
+  
+  background-color: #b81212; /* Cambia el color de fondo */
+  color: #ffffff; /* Cambia el color del texto */
+  border-color: #b81212; /* Cambia el color del borde */
+
+  &:hover{
+    background-color: #e80f0f; /* Cambia el color de fondo al pasar el mouse */
+  }
+}

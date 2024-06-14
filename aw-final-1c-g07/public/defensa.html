@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Pagina de venta de cartas" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/assets/css/cliente.css" />
+    <link rel="stylesheet" href="/assets/css/button-style.css" />
+    <script src="/assets/js/defensa.js" type="module" defer></script>
+    <title>Yugioh! Cliente</title>
+  </head>
+<body>
+  <!-- Cabecera -->
+  <header class="container-fluid">
+    <nav>
+    <hgroup>
+      <h1>Yu-Gi-Oh! Cliente</h1>
+      <p>Ver Defensa</p>
+    </hgroup>
+    <ul>
+      <li>
+        <button type="click" style="margin-right: 10px;" id="inicioUser">Ir a inicio</button>
+      </li>
+      <li>
+        <button type="click" style="margin-right: 10px;" id="perfilUser">Ver perfíl</button>
+      </li>
+      <li>
+        <button type="click" id="cerrarSesion" class="Boton-Cierre">Cerrar sesión</button>          
+      </li>
+    </ul>
+    </nav>
+  </header>
+  <!-- Contenido principal -->
+  <main class="container">
+    <div class="content-yugioh">
+        <section class="pedidos">
+            <h3>Historias de defensa</h3>
+            <div class="card-grid" id="defensa">
+            </div>
+        </section>
+    </div> 
+    <button id="volcar">Volcar datos</button>
+    <button id="anadir">añadir</button>
+    <form id="formData">
+        <input type="text" id="datos"/>
+        <input type="text" id="nombre"/>
+        <input type="date" id="nacimiento"/>
+    </form>
+  </main>
+  <!-- Pie de página -->
+  <footer class="container-fluid">
+    <hr>
+    <p>&copy; 2024. Aplicaciones Web. <em>Grado en Ingeniería Informática (Universidad de León)</em>.</p>
+  </footer>
+</body>
+</html>

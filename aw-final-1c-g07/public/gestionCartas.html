@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Pagina de venta de cartas" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/assets/css/gestionCartas.css" />
+    <script src="/assets/js/gestionCartas.js" type="module" defer></script>
+    <title>Yugioh! Cartas</title>
+  </head>
+<body>
+  <!-- Cabecera -->
+   <!-- Cabecera -->
+   <header class="container-fluid">
+    <nav>
+      <hgroup>
+      <h1>Yu-Gi-Oh! Admin</h1>
+      <p>Página de compra venta de cartas</p>
+    </hgroup>
+      <ul>
+        <li>
+          <button type="click" id="back">Atrás</button>          
+        </li>
+      </ul> 
+    </nav>
+  </header>
+  <!-- Contenido principal -->
+  <main class="container">
+    <section class="advanced-search">
+        <fieldset role="group">
+          <form name="yugioh-search">
+            <fieldset role="group">
+              <input type="text" name="name" placeholder="Introduzca el nombre de la carta">
+              <input type="submit" value="Buscar">
+            </fieldset>
+        </form>
+      </fieldset>
+    </section>
+
+    <div class="content-yugioh">
+      <section class="cards">
+          <h3>Cartas</h3>
+          <div class="card-grid">
+          </div>
+      </section>
+
+      <aside id="carro">
+        <h3>Nuevas Cartas</h3>
+        <div class="compra">
+            <ul id="deck-list">
+            </ul>
+        </div>
+        <button type="click" id="addCards">Añadir</button>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>

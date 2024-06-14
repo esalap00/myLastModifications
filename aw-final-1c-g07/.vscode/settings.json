@@ -1,0 +1,10 @@
+{
+  "IDX.aI.enableInlineCompletion": true,
+  "IDX.aI.enableCodebaseIndexing": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "todo-tree.general.enableFileWatcher": true,
+  "todo-tree.highlights.useColourScheme": true,
+  "cSpell.language": "en,es"
+}

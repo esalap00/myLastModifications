@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Pagina de venta de cartas" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/assets/css/cliente.css" />
+    <link rel="stylesheet" href="/assets/css/button-style.css" />
+    <script src="/assets/js/admin.js" type="module" defer></script>
+    <title>Yugioh! Admin</title>
+  </head>
+<body>
+  <!-- Cabecera -->
+  <header class="container-fluid">
+    <nav>
+      <hgroup>
+      <h1>Yu-Gi-Oh! Admin</h1>
+      <p>Página de compra venta de cartas</p>
+    </hgroup>
+      <ul>
+        <li>
+          <button type="click" style="margin-right: 10px;" id="perfilUser">Ver perfíl</button>
+        </li>
+        <li>
+          <button type="click" id="cerrarSesion" class="Boton-Cierre">Cerrar sesión</button>          
+        </li>
+      </ul> 
+    </nav>
+  </header>
+  <!-- Contenido principal -->
+  <main class="container">
+    <section class="advanced-search">
+        <fieldset role="group">
+          <form name="yugioh-search">
+            <fieldset role="group">
+              <input type="text" name="name" placeholder="Introduzca el nombre de la carta">
+              <input type="submit" value="Buscar">
+            </fieldset>
+            <button type="click" id="sugerencias">Ver sugerencias</button>
+            <button type="click" id="gestion">Ver cuentas</button>
+            <button type="click" id="addCard">Añadir carta</button>
+        </form>
+      </fieldset>
+    </section>
+
+    <div class="content-yugioh">
+      <section class="cards">
+          <h3>Cartas</h3>
+          <div class="card-grid">
+          </div>
+      </section>
+
+      <aside id="carro">
+          <h3>Cartas a eliminar</h3>
+          <div class="compra">
+              <ul id="deck-list">
+              </ul>
+          </div>
+          <button type="click" id="deleteCards">Eliminar</button>
+      </aside>
+    </div>
+
+  </main>
+</body>
+</html>

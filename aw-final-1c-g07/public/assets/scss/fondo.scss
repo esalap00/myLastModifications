@@ -1,0 +1,51 @@
+@use "@picocss/pico/scss/pico";
+
+body {
+    background-image: url('../img/fondoSugerencias.jpg'); /* Aquí reemplaza 'ruta/a/tu/imagen.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover; /* Esto hace que la imagen de fondo cubra toda la pantalla */
+    background-position: center;  /*Esto posiciona la imagen en el centro */
+    background-repeat: no-repeat; /* Esto evita que la imagen se repita */
+}
+
+.input, .textarea, .select {
+    background-color: #066fef; /* Cambia este valor al color rojo deseado */
+    color: #000;
+    border: 1px solid #000; /* Borde negro */
+}
+
+/* Estilo para cambiar el color del texto al pasar el mouse */
+.input:hover {
+    background-color: #b43c3c;
+}
+
+footer{
+  background-color: #333434; /* Color de fondo del footer */
+  color: #fff; /* Color del texto */
+  padding: 20px; /* Espaciado interno del footer */
+  text-align: center; /* Centrar el contenido del footer */
+}
+
+/*
+.content {
+    text-align: center; /* Esto centra el contenido en la página 
+    padding: 50px;
+}
+*/
+
+.card {
+  border: 1px solid #ccc; /* Define un borde sólido de 1px de ancho, con un color gris */
+  border-radius: 10px; /* Establece un radio de borde de 10px, para dar esquinas redondeadas */
+  padding: 20px; /* Añade un espacio de relleno interno de 20px para separar el contenido del borde */
+  background-color: white; /* Establece el color de fondo de la tarjeta como blanco */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave debajo de la tarjeta, con desplazamiento de 0 en el eje x, 2px en el eje y, 4px de desenfoque y color de sombra semi-transparente */
+}
+
+.card p {
+  color: black; /* Define el color del texto dentro de los párrafos dentro de las tarjetas como negro */
+}
+
+.grid-container {
+  display: grid; /* se utiliza para definir un contenedor como un grid (o cuadrícula) de elementos. */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Define el tamaño mínimo y máximo de las columnas y deja que el grid se adapte automáticamente */
+  gap: 20px; /* Espacio entre las tarjetas */
+} 

@@ -1,0 +1,26 @@
+@use "@picocss/pico/scss/pico";
+
+html {
+  background-image: url('../img/fondoGestion.jpg'); /* Aquí reemplaza 'ruta/a/tu/imagen.jpg' con la ruta de tu imagen de fondo */
+  background-size: cover; /* Esto hace que la imagen de fondo cubra toda la pantalla */
+  background-position: center;  /*Esto posiciona la imagen en el centro */
+  background-repeat: no-repeat; /* Esto evita que la imagen se repita */
+}
+
+button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button.create-admin {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button.delete-user {
+  background-color: #f44336;
+  color: white;
+}
